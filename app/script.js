@@ -90,7 +90,7 @@ render() {
         {(status !== 'off') && <div className="timer">{this.formatTime(this.state.time)}</div>}
         {(status === 'off') && <button onClick={this.startTimer} className="btn">Start</button>}
         {(status !== 'off') && <button onClick={this.stopTimer} className="btn">Stop</button>}
-        <button className="btn btn-close">X</button>
+        <button onClick={this.closeApp} className="btn btn-close">X</button>
       </div>
     )
   };
